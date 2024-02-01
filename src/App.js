@@ -6,6 +6,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "./services/firebase";
 import Login from "./components/Login";
 import Loading from "./components/Loading";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App = () => {
   const [user, loading] = useAuthState(auth);
